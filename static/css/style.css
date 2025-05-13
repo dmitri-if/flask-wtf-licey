@@ -7,15 +7,11 @@ form.login_form {
     border-radius: 5px;
     padding: 10px;
 }
-h4 {
+.marse {
     color: rgb(109, 102, 102);
+    text-align: left;
 }
-h1 {
-    text-align: center;
-}
-.answer {
-    margin-left: 20px;
-}
-.auto_answer {
-    margin-left: 20px;
+.pact {
+    font-size: 20px;
+    margin-left: 5px;
 }
