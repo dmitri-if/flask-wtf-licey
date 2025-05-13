@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{{ title }}
+{% block content %}
+    <div class="auto_answer">
+        <label for="surname">Фамилия:  </label><input type="text" id="surname" name="surname" /><br><br>
+        <label for="name">Имя:  </label><input type="text" id="name" name="name" /><br><br>
+        <label for="education">Образование:  </label><input type="text" id="education" name="education" /><br><br>
+        <label for="profession">Профессия:  </label><input type="text" id="profession" name="profession" /><br><br>
+        <label for="sex">Пол:  </label><input type="text" id="sex" name="sex" /><br><br>
+        <label for="motivation">Мотивация:</label><input type="text" id="motivation" name="motivation" /><br><br>
+        <label for="ready">Готовы остаться на Марсе?:  </label><input type="text" id="ready" name="ready" /><br><br>
+    </div>
+{% endblock %}

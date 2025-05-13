@@ -13,15 +13,9 @@ h4 {
 h1 {
     text-align: center;
 }
-h2 {
-    text-align: center;
+.answer {
+    margin-left: 20px;
 }
-.image {
-    text-align: center;
-}
-.olive {
-    margin-left: 550px;;
-}
-.uli {
-    margin-left: 550px;
+.auto_answer {
+    margin-left: 20px;
 }
