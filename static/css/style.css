@@ -10,9 +10,18 @@ form.login_form {
 h4 {
     color: rgb(109, 102, 102);
 }
+h1 {
+    text-align: center;
+}
 h2 {
     text-align: center;
 }
 .image {
     text-align: center;
+}
+.olive {
+    margin-left: 550px;;
+}
+.uli {
+    margin-left: 550px;
 }

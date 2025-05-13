@@ -9,9 +9,9 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 def index():
     return render_template('index.html', title='Заголовок', text1='Миссия Колонизация Марса', text2='И на Марсе будут яблони цвести!')
 
-@app.route('/traning/<prof>')
-def prof(prof):
-    return render_template('prof.html', title='Персонал', prof=prof)
+@app.route('/list_prof/<ol>')
+def olive(ol):
+    return render_template('ol.html', title='Список профессий', ol=ol)
 
 
 if __name__ == '__main__':
