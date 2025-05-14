@@ -3,7 +3,11 @@
 {{ title }}
 {% block content %}
     <h2>Размещение по каютам</h2>
-    {% for loop in range(len(items)) %}
-        <h4>{{ items[loop] }} - Каюта № {{ loop }}</h4>
+    {% for loop in range(1, len(items) + 1) %}
+        {% if loop != 0 %}
+            <h4>{{ items[loop] }} - Каюта № {{ loop }}</h4>
+        {% else %}
+            <h4>{{ items[loop] }} - Каюта № {{ loop }} - капитан коробля</h4>
+        {% endif %}
     {% endfor %}
 {% endblock %}
