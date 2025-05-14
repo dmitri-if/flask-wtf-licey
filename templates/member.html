@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{{ title }}
+{% block content %}
+    <h4>И на Марсе будут цвести яблони!</h4>
+    <h2 class="name">{{ people['name'] }} {{ people['surname'] }}</h2>
+    <img src="{{ people['foto'] }}" style="width: 400px; height: auto;" alt="" class="image">
+    <h5 class="proff">{{', '.join(people["prof"]) }}</h5>
+{% endblock %}

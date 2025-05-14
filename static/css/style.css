@@ -13,3 +13,14 @@ h4 {
 h1 {
     text-align: center;
 }
+.name {
+    text-align: center;
+}
+.image {
+    margin-top: 40px;
+    margin-left: 37%;
+}
+.proff{
+    margin-top: 40px;
+    text-align: center;
+}
