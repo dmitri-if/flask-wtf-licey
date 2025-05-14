@@ -8,6 +8,10 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 def index():
     return render_template('index.html', title='Заголовок', text1='Миссия Колонизация Марса', text2='И на Марсе будут яблони цвести!')
 
+@app.route('/galery')
+def galery():
+    return render_template('galery.html', title='Галерея с загрузкой')
+
 
 if __name__ == '__main__':
-    app.run(port=8080, host='127.0.0.1')
+    app.run(port=8080, host='127.0.0.1')    
