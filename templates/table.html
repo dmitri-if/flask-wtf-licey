@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{{ title }}
+{% block content %}
+<h4>И на Марсе будут яблони цвести!</h4>
+<h4 class="ofrml">Оформление каюты</h4>
+<div style="width: 1075px; height: 30px; background-color: rgba(97, 90, 90, 0.301); margin-left: 100px; display: flex; 
+flex-direction: row; 
+align-items: center; 
+justify-content: space-around;">
+    <span>Цвет стены</span>
+    <span>Эмблема</span>
+</div>
+{% if sex == 'female' and year < 21 %}
+<img src="/static/img/female_kid.png" alt="" class="male">
+<img src="/static/img/kids.jpg" alt="" class="years">
+{% elif sex == 'female' and year >= 21 %}
+<img src="/static/img/female_hight.png" alt="" class="male">
+<img src="/static/img/hight.jpg" alt="" class="years">
+{% elif sex == 'male' and year < 21 %}
+<img src="/static/img/male_kid.png" alt="" class="male">
+<img src="/static/img/kids.jpg" alt="" class="years">
+{% else %}
+<img src="/static/img/male_hight.png" alt="" class="male">
+<img src="/static/img/hight.jpg" alt="" class="years">
+{% endif %}
+{% endblock %}

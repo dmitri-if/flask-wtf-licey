@@ -8,14 +8,10 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 def index():
     return render_template('index.html', title='Заголовок', text1='Миссия Колонизация Марса', text2='И на Марсе будут яблони цвести!')
 
-@app.route('/answer')
-def answer():
-    return render_template('answer.html', title='Watny', surname='Нелюбин', name='Дима', education='Ясли', profession='Отаку', sex='Мужской',
-                           motivation='Люблю аниме', ready='True')
 
-@app.route('/auto_answer')
-def auto_answer():
-    return render_template('auto_answer.html', title='Почти регистрация')
+@app.route('/table/<sex>/<year>')
+def table(sex, year):
+    return render_template('table.html', title='Цвет каюты', sex=sex, year=int(year))
 
 
 if __name__ == '__main__':
